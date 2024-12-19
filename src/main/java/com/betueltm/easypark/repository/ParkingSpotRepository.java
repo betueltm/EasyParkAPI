@@ -1,7 +1,9 @@
 package com.betueltm.easypark.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
 import com.betueltm.easypark.model.ParkingSpot;
 
-public class ParkingSpotRepository extends JpaRepository<ParkingSpot, Long>  {
+public interface ParkingSpotRepository extends JpaRepository<ParkingSpot, Long> {
 
 }

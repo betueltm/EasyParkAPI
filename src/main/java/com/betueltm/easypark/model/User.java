@@ -1,7 +1,5 @@
 package com.betueltm.easypark.model;
 
-import java.util.List;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -13,7 +11,6 @@ public class User {
 	@GeneratedValue
 	private Long id;
 	private String name;
-	private List<Vehicle> vehicles;
 	
 	public Long getId() {
 		return id;
@@ -29,13 +26,5 @@ public class User {
 	
 	public void setName(String name) {
 		this.name = name;
-	}
-	
-	public List<Vehicle> getVehicles() {
-		return vehicles;
-	}
-	
-	public void setVehicles(List<Vehicle> vehicles) {
-		this.vehicles = vehicles;
 	}
 }
